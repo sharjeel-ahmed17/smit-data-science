@@ -1,0 +1,12 @@
+!pip install langchain langchain-openai langchain-mistralai langgraph
+
+openai pandas numpy sqlalchemy aiosqlite python-dotenv tiktoken
+
+import os
+from google.colab import userdata
+os.environ["MISTRAL_API_KEY"] = userdata.get('MISTRAL_API_KEY')
+
+
+from langchain_mistralai import ChatMistralAI
+
+model name = mistral-small-2506

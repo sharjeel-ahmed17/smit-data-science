@@ -1,0 +1,20 @@
+python -m ipykernel install --user --name=ds-env --display-name "Python (Data Science)"
+uv run python -m jupyterlab
+
+
+# delete venv
+rm -rf .venv
+
+# recreate using uv properly
+uv venv --python 3.12
+
+# activate
+.venv\Scripts\activate
+
+# install
+uv pip install notebook kernel
+
+# register kernel
+python -m ipykernel install --user --name=email-spam
+
+python -m notebook
