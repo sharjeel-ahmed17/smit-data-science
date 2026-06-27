@@ -220,3 +220,6 @@ anaconda_projects
 chroma_db
 deeplearning.pdf
 GRU.pdf
+
+.env
+.venv
